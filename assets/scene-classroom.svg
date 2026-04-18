@@ -1,0 +1,29 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="760" rx="40" fill="#F4F8FF"/>
+<rect x="42" y="44" width="1116" height="672" rx="28" fill="white" stroke="#D8E3F4" stroke-width="4"/>
+<rect x="92" y="98" width="380" height="220" rx="20" fill="#EAF2FF"/>
+<rect x="514" y="98" width="590" height="220" rx="20" fill="#0F2F66"/>
+<rect x="550" y="130" width="160" height="28" rx="10" fill="#7FB6FF"/>
+<rect x="550" y="180" width="510" height="96" rx="16" fill="#1B4C96"/>
+<circle cx="188" cy="438" r="62" fill="#BDD7FF"/>
+<circle cx="360" cy="438" r="62" fill="#BDD7FF"/>
+<circle cx="532" cy="438" r="62" fill="#BDD7FF"/>
+<circle cx="704" cy="438" r="62" fill="#BDD7FF"/>
+<circle cx="876" cy="438" r="62" fill="#BDD7FF"/>
+<rect x="128" y="500" width="120" height="92" rx="18" fill="#FFFFFF" stroke="#C8D6EB" stroke-width="4"/>
+<rect x="300" y="500" width="120" height="92" rx="18" fill="#FFFFFF" stroke="#C8D6EB" stroke-width="4"/>
+<rect x="472" y="500" width="120" height="92" rx="18" fill="#FFFFFF" stroke="#C8D6EB" stroke-width="4"/>
+<rect x="644" y="500" width="120" height="92" rx="18" fill="#FFFFFF" stroke="#C8D6EB" stroke-width="4"/>
+<rect x="816" y="500" width="120" height="92" rx="18" fill="#FFFFFF" stroke="#C8D6EB" stroke-width="4"/>
+<rect x="988" y="500" width="120" height="92" rx="18" fill="#FFFFFF" stroke="#C8D6EB" stroke-width="4"/>
+<rect x="106" y="350" width="240" height="20" rx="10" fill="#235EC7" opacity=".22"/>
+<rect x="106" y="384" width="184" height="20" rx="10" fill="#235EC7" opacity=".16"/>
+<rect x="382" y="350" width="240" height="20" rx="10" fill="#0AA36C" opacity=".22"/>
+<rect x="382" y="384" width="184" height="20" rx="10" fill="#0AA36C" opacity=".16"/>
+<rect x="658" y="350" width="240" height="20" rx="10" fill="#F0AA00" opacity=".22"/>
+<rect x="658" y="384" width="184" height="20" rx="10" fill="#F0AA00" opacity=".16"/>
+<rect x="934" y="350" width="132" height="20" rx="10" fill="#8C53D8" opacity=".22"/>
+<rect x="934" y="384" width="132" height="20" rx="10" fill="#8C53D8" opacity=".16"/>
+<text x="94" y="146" fill="#0F2F66" font-family="Arial, sans-serif" font-size="34" font-weight="700">授業・探究・発表が</text>
+<text x="94" y="190" fill="#0F2F66" font-family="Arial, sans-serif" font-size="34" font-weight="700">ひとつの環境で回る教室へ</text>
+</svg>

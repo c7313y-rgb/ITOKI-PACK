@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>イトーキパッケージ | ハード×教育OS×探究コンテンツ</title>
+  <meta name="description" content="イトーキの教育空間向けハードに、副担任mirAI N-E.X.T.を標準装備。朝日学研シンクエスト等の探究コンテンツと発信機能まで一体化し、N-E.X.T.ハイスクール各類型に対応する学校向けLP。" />
+  <style>
+    :root{
+      --navy:#123b7a;
+      --blue:#1d5fbe;
+      --sky:#eef5fb;
+      --line:#d7dfeb;
+      --text:#1f2a44;
+      --muted:#5d6980;
+      --orange:#dd9224;
+      --teal:#2eb7b0;
+      --bg:#f2f4f7;
+      --white:#fff;
+      --shadow:0 18px 46px rgba(16,45,95,.12);
+      --radius:20px;
+      --max:980px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif;background:#ececec;color:var(--text);line-height:1.65}
+    img{display:block;max-width:100%}
+    a{text-decoration:none;color:inherit}
+    .page{max-width:var(--max);margin:28px auto 40px;background:#fff;border:1px solid #cfd6e2;border-radius:14px;overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.14)}
+    .browser{background:#f9fafc;border-bottom:1px solid #d7dde8}
+    .browser-top{display:flex;align-items:center;justify-content:space-between;padding:12px 16px 10px}
+    .dots{display:flex;gap:6px}.dot{width:10px;height:10px;border-radius:50%}.d1{background:#ffb34d}.d2{background:#53c26b}.d3{background:#5aa4ff}
+    .address{display:flex;align-items:center;gap:10px;font-size:12px;color:#6a768a;font-weight:600}
+    .address .bar{background:#fff;border:1px solid #dbe2ed;border-radius:999px;padding:6px 12px;min-width:300px}
+    .browser-nav{display:flex;gap:18px;padding:0 16px 10px;font-size:13px;color:#63708a;border-top:1px solid #eef2f7}
+    .browser-nav a{padding:10px 0;position:relative}
+    .browser-nav a.active{color:var(--navy);font-weight:800}
+    .browser-nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:#dc6161;border-radius:999px}
+    .content{padding:30px 56px 48px;background:linear-gradient(180deg,#fafbfd 0%,#ffffff 22%,#f7fafd 100%)}
+
+    .hero{position:relative;min-height:370px;border-radius:0;background:
+      linear-gradient(90deg, rgba(255,255,255,.93) 0%, rgba(255,255,255,.84) 31%, rgba(255,255,255,.34) 56%, rgba(255,255,255,.06) 100%),
+      url('assets/page-2.png') center/cover no-repeat;
+      overflow:hidden;
+      box-shadow:inset 0 0 0 1px rgba(18,59,122,.06);
+    }
+    .hero-inner{padding:56px 38px;max-width:52%}
+    .eyebrow{font-size:18px;font-weight:800;color:var(--orange);letter-spacing:.02em;margin-bottom:8px}
+    h1{font-size:64px;line-height:1.02;letter-spacing:-.03em;color:var(--navy);margin:0 0 14px;font-weight:900}
+    .lead{font-size:18px;color:#23324d;font-weight:700;margin:0 0 24px}
+    .hero .cta{display:inline-flex;align-items:center;justify-content:center;background:var(--navy);color:#fff;border-radius:999px;padding:14px 26px;font-size:15px;font-weight:800;box-shadow:var(--shadow)}
+
+    .circles{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:34px 18px 8px}
+    .circle-card{text-align:center}
+    .circle{width:148px;height:148px;border-radius:50%;overflow:hidden;margin:0 auto 12px;border:5px solid #fff;box-shadow:0 12px 28px rgba(15,47,102,.14)}
+    .circle img{width:100%;height:100%;object-fit:cover}
+    .circle-card h3{margin:0 0 8px;font-size:24px;line-height:1.2;color:var(--navy);font-weight:900}
+    .circle-card p{margin:0 auto;color:#4c5870;font-size:13px;max-width:180px;line-height:1.55}
+
+    .section-card{background:linear-gradient(180deg,#f8fbff 0%,#f6fbfd 100%);border:1px solid #e5edf6;border-radius:0;padding:26px 26px 20px;margin-top:18px}
+    .section-title{font-size:28px;line-height:1.25;color:var(--navy);font-weight:900;margin:0 0 18px;display:flex;align-items:center;gap:14px}
+    .section-title::after{content:"";height:1px;background:#9eaac0;flex:1;opacity:.45}
+
+    .flow-wrap{background:linear-gradient(135deg,rgba(32,112,199,.06),rgba(46,183,176,.08));border-radius:18px;padding:20px 18px 18px}
+    .flow-top{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:14px;align-items:center;margin-bottom:18px}
+    .flow-box{background:#fff;border:1px solid #d8e2ef;border-radius:14px;padding:14px 16px;text-align:center;font-weight:800;color:var(--navy);min-height:78px;display:flex;align-items:center;justify-content:center;line-height:1.4}
+    .flow-center{background:#fff;border:1px solid #c7d7eb;border-radius:16px;padding:8px;box-shadow:0 12px 22px rgba(18,59,122,.08)}
+    .flow-center img{border-radius:10px}
+    .model-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .model{background:#fff;border:1px solid #d8e2ef;border-radius:18px;overflow:hidden}
+    .model-head{padding:14px 16px;color:#fff;font-weight:900;font-size:18px;text-align:center}
+    .m1 .model-head{background:linear-gradient(180deg,#df9323,#cb7f10)}
+    .m2 .model-head{background:linear-gradient(180deg,#2364c6,#174da5)}
+    .m3 .model-head{background:linear-gradient(180deg,#2cb4ae,#1e9c97)}
+    .model-body{padding:16px 18px;background:#fff}
+    .model-body ul{margin:0;padding-left:18px;color:#3f4c64;font-size:14px}
+    .model-body li{margin:7px 0}
+
+    .future-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px}
+    .future{background:#fff;border:1px solid #d8e2ef;border-radius:16px;overflow:hidden}
+    .future h3{margin:0;padding:14px 16px;color:#fff;font-size:18px;text-align:center;font-weight:900}
+    .future:nth-child(1) h3{background:#d89229}.future:nth-child(2) h3{background:#215fbd}.future:nth-child(3) h3{background:#2daea7}
+    .future ul{margin:0;padding:14px 18px 16px 32px;font-size:14px;color:#42506a;min-height:116px}
+    .future li{margin:7px 0}
+
+    .photo-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .photo-card img{width:100%;height:168px;object-fit:cover;border-radius:0;box-shadow:0 12px 24px rgba(16,45,95,.12)}
+    .photo-card p{margin:10px 4px 0;color:#4d5970;font-size:13px;line-height:1.55}
+
+    .benefit-row{display:grid;grid-template-columns:repeat(3,1fr);gap:0;background:#f6fbff;border:1px solid #d8e2ef;border-radius:0;overflow:hidden}
+    .benefit{padding:20px 22px;border-right:1px solid #d8e2ef;background:linear-gradient(180deg,#f8fcff 0%,#edf6fb 100%)}
+    .benefit:last-child{border-right:none}
+    .benefit h3{margin:0 0 10px;font-size:17px;color:var(--navy);font-weight:900;display:flex;align-items:center;gap:10px}
+    .icon{width:24px;height:24px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:#e6f0ff;color:var(--blue);font-size:14px;font-weight:900;flex:0 0 auto}
+    .benefit ul{margin:0;padding-left:18px;font-size:13px;color:#43506a}
+    .benefit li{margin:7px 0}
+
+    .footer-note{padding-top:24px;font-size:12px;color:#6b7790;text-align:center}
+
+    @media (max-width: 920px){
+      .content{padding:22px}
+      .hero-inner{max-width:64%;padding:40px 26px}
+      h1{font-size:46px}
+      .circles,.model-grid,.future-grid,.photo-row,.benefit-row,.flow-top{grid-template-columns:1fr 1fr}
+      .flow-top .flow-center{grid-column:1/-1}
+    }
+    @media (max-width: 640px){
+      .page{margin:0;border-radius:0}
+      .content{padding:18px}
+      .address .bar{min-width:0;width:100%}
+      .browser-top{gap:10px;align-items:flex-start;flex-direction:column}
+      .browser-nav{gap:12px;flex-wrap:wrap}
+      .hero{min-height:auto}
+      .hero-inner{max-width:none;padding:28px 22px;background:linear-gradient(180deg,rgba(255,255,255,.92),rgba(255,255,255,.84))}
+      h1{font-size:38px}
+      .lead{font-size:16px}
+      .circles,.model-grid,.future-grid,.photo-row,.benefit-row,.flow-top{grid-template-columns:1fr}
+      .circle{width:132px;height:132px}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="browser">
+      <div class="browser-top">
+        <div class="address">
+          <div class="dots"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span></div>
+          <div class="bar">itoki-next-highschool-package / LP preview</div>
+        </div>
+        <div class="address">ITOKI Hardware × mirAI N-E.X.T. × ShinQuest</div>
+      </div>
+      <div class="browser-nav">
+        <a class="active" href="#top">Main</a>
+        <a href="#types">Types</a>
+        <a href="#future">Value</a>
+        <a href="#merit">Merits</a>
+      </div>
+    </div>
+
+    <main class="content" id="top">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="eyebrow">次世代教育の最適解</div>
+          <h1>イトーキ<br>パッケージ</h1>
+          <p class="lead">イトーキのハードを中核に、教育OS「副担任 mirAI N-E.X.T.」を標準装備。<br>さらに朝日学研シンクエスト等の魅力ある探究コンテンツと、先生コネクト連携による発信機能までを一体化した、学校のための実装型モデルです。</p>
+          <a class="cta" href="#types">パッケージの全体像を見る</a>
+        </div>
+      </section>
+
+      <section class="circles" aria-label="4つの主要価値">
+        <div class="circle-card">
+          <div class="circle"><img src="assets/page-2.png" alt="イトーキの教育ハード"></div>
+          <h3>イトーキの<br>教育ハード</h3>
+          <p>大型提示装置や学習空間と親和するハードを前面に据え、授業で使われる前提の実装環境を整えます。</p>
+        </div>
+        <div class="circle-card">
+          <div class="circle"><img src="assets/page-1.png" alt="副担任mirAI N-E.X.T."></div>
+          <h3>標準装備の<br>教育OS</h3>
+          <p>副担任 mirAI N-E.X.T. を初期状態で搭載。授業設計、探究、評価、進路支援を一気通貫で扱えます。</p>
+        </div>
+        <div class="circle-card">
+          <div class="circle"><img src="assets/page-3.png" alt="朝日学研シンクエストのコンテンツ"></div>
+          <h3>魅力ある<br>探究コンテンツ</h3>
+          <p>朝日学研シンクエスト等の体験型・地域課題型・企業共創型コンテンツを、学校の学びへ取り込みやすくします。</p>
+        </div>
+        <div class="circle-card">
+          <div class="circle"><img src="assets/page-11.png" alt="先生コネクト連携による発信機能"></div>
+          <h3>成果発信と<br>横展開</h3>
+          <p>先生コネクトと連携し、実践の発信・共有・他校展開まで視野に入れた学校価値の可視化を後押しします。</p>
+        </div>
+      </section>
+
+      <section class="section-card" id="types">
+        <h2 class="section-title">校種・類型に合わせて、ハードと教育OSを中核に学び全体を最適化</h2>
+        <div class="flow-wrap">
+          <div class="flow-top">
+            <div class="flow-box">イトーキハード上で<br>日常授業から探究まで一体運用</div>
+            <div class="flow-center"><img src="assets/page-1.png" alt="副担任mirAI N-E.X.T.の画面イメージ"></div>
+            <div class="flow-box">コンテンツ導入・成果分析・発信までを<br>学校単位で継続運用</div>
+          </div>
+          <div class="model-grid">
+            <article class="model m1">
+              <div class="model-head">類型 1<br>地域・社会接続</div>
+              <div class="model-body">
+                <ul>
+                  <li>地域産業・社会課題を授業テーマへ翻訳</li>
+                  <li>朝日学研シンクエスト等の地域・社会接続型コンテンツを活用</li>
+                  <li>企業・自治体との協働や発表の流れを授業化</li>
+                  <li>成果を学校内外へ発信し、地域連携の価値を可視化</li>
+                </ul>
+              </div>
+            </article>
+            <article class="model m2">
+              <div class="model-head">類型 2<br>理数・探究人材</div>
+              <div class="model-body">
+                <ul>
+                  <li>研究テーマ設計と探究プロセス管理をOS上で一元化</li>
+                  <li>仮説・検証・記録・発表準備をハードと連動して支援</li>
+                  <li>ルーブリック評価と受講履歴を標準で蓄積</li>
+                  <li>理数・研究志向の進路支援へ接続しやすい</li>
+                </ul>
+              </div>
+            </article>
+            <article class="model m3">
+              <div class="model-head">類型 3<br>多様な学び・遠隔</div>
+              <div class="model-body">
+                <ul>
+                  <li>個別最適な学習計画と継続支援を標準実装</li>
+                  <li>遠隔・非同期・多様な参加形態にも対応しやすい</li>
+                  <li>学習状況の把握と伴走支援を副担任mirAIが支援</li>
+                  <li>自己理解・キャリア形成・進路指導へ接続できる</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="future" style="padding-top:26px;">
+        <h2 class="section-title">学校長・教育委員会がイメージしやすい、導入後の学校像</h2>
+        <div class="future-grid">
+          <article class="future">
+            <h3>類型1 地域課題・社会接続</h3>
+            <ul>
+              <li>地域とつながる授業をハード・OS一体で整備しやすい</li>
+              <li>企業・自治体との連携授業を学校標準へ近づけられる</li>
+              <li>発表会や地域発信まで含めた教育成果の見せ方をつくれる</li>
+            </ul>
+          </article>
+          <article class="future">
+            <h3>類型2 理数・探究人材</h3>
+            <ul>
+              <li>研究テーマの深掘りと指導履歴を学校資産として蓄積</li>
+              <li>探究の質を高める評価設計をOS上で回しやすい</li>
+              <li>大学・研究機関接続を見据えた学びの厚みを作れる</li>
+            </ul>
+          </article>
+          <article class="future">
+            <h3>類型3 多様な学び・支援</h3>
+            <ul>
+              <li>一人ひとりに合わせた学びの導線を設計しやすい</li>
+              <li>継続支援・面談準備・記録整理の負荷を抑えられる</li>
+              <li>将来像の言語化と進路伴走の質を底上げできる</li>
+            </ul>
+          </article>
+        </div>
+        <div class="photo-row">
+          <article class="photo-card">
+            <img src="assets/page-2.png" alt="探究授業の実施イメージ">
+            <p>イトーキのハードを中心に据えることで、提示・共有・協働が自然に起きる教室をつくり、日常授業から探究へ無理なく接続できます。</p>
+          </article>
+          <article class="photo-card">
+            <img src="assets/page-1.png" alt="協働学習の実施イメージ">
+            <p>副担任 mirAI N-E.X.T. が授業設計、評価、履歴管理を支え、教員の実践を属人化させずに学校全体へ展開しやすくします。</p>
+          </article>
+          <article class="photo-card">
+            <img src="assets/page-11.png" alt="成果普及と発信のイメージ">
+            <p>先生コネクトによる発信機能が加わることで、校内実践を対外発信へつなげ、教育委員会としての横展開や広報にも活かせます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="merit" style="padding-top:28px;">
+        <h2 class="section-title">教育委員会・学校長に伝わりやすい、導入価値の要点</h2>
+        <div class="benefit-row">
+          <article class="benefit">
+            <h3><span class="icon">◎</span>ハード導入が学びの実装に直結する</h3>
+            <ul>
+              <li>単なる機器整備ではなく、授業・探究・発表までを一体で動かせる</li>
+              <li>ハードの活用場面が明確で、校内展開をイメージしやすい</li>
+              <li>導入後に使われない設備になりにくい構造を作りやすい</li>
+            </ul>
+          </article>
+          <article class="benefit">
+            <h3><span class="icon">◎</span>教育OSが学校運営の質を底上げする</h3>
+            <ul>
+              <li>受講履歴、振り返り、評価結果を学校内で共有しやすい</li>
+              <li>面談や進路指導に活かせる材料を継続的に蓄積できる</li>
+              <li>探究の質や学びの変化を説明しやすくなる</li>
+            </ul>
+          </article>
+          <article class="benefit">
+            <h3><span class="icon">◎</span>コンテンツと発信機能が学校価値を広げる</h3>
+            <ul>
+              <li>朝日学研シンクエスト等の魅力ある素材で授業企画の幅を広げられる</li>
+              <li>先生コネクトを通じ、実践の対外発信や他校共有に展開できる</li>
+              <li>学校の先進性を見える形で示しやすくなる</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <div class="footer-note">本ページは、イトーキのハードを中核に、教育OS・探究コンテンツ・発信機能を一体で訴求する学校・教育委員会向けLPです。</div>
+    </main>
+  </div>
+</body>
+</html>

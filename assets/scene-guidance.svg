@@ -1,0 +1,26 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="760" rx="40" fill="#F8FAFD"/>
+<rect x="70" y="80" width="1060" height="600" rx="32" fill="white" stroke="#D9E2EE" stroke-width="4"/>
+<rect x="122" y="126" width="294" height="508" rx="28" fill="#EAF2FF"/>
+<rect x="446" y="126" width="296" height="508" rx="28" fill="#F2F8FF"/>
+<rect x="772" y="126" width="306" height="508" rx="28" fill="#EDF9F4"/>
+<circle cx="270" cy="240" r="82" fill="#A9CAFF"/>
+<circle cx="594" cy="240" r="82" fill="#C6D9F9"/>
+<circle cx="924" cy="240" r="82" fill="#B9E8D3"/>
+<rect x="158" y="372" width="222" height="26" rx="10" fill="#235EC7" opacity=".28"/>
+<rect x="158" y="416" width="188" height="20" rx="10" fill="#235EC7" opacity=".16"/>
+<rect x="158" y="452" width="200" height="20" rx="10" fill="#235EC7" opacity=".16"/>
+<rect x="480" y="372" width="228" height="26" rx="10" fill="#3E6FCD" opacity=".24"/>
+<rect x="480" y="416" width="206" height="20" rx="10" fill="#3E6FCD" opacity=".14"/>
+<rect x="480" y="452" width="184" height="20" rx="10" fill="#3E6FCD" opacity=".14"/>
+<rect x="808" y="372" width="226" height="26" rx="10" fill="#0AA36C" opacity=".24"/>
+<rect x="808" y="416" width="196" height="20" rx="10" fill="#0AA36C" opacity=".14"/>
+<rect x="808" y="452" width="168" height="20" rx="10" fill="#0AA36C" opacity=".14"/>
+<text x="146" y="172" fill="#0F2F66" font-family="Arial, sans-serif" font-size="26" font-weight="700">授業実施</text>
+<text x="471" y="172" fill="#0F2F66" font-family="Arial, sans-serif" font-size="26" font-weight="700">評価・記録</text>
+<text x="802" y="172" fill="#0F2F66" font-family="Arial, sans-serif" font-size="26" font-weight="700">進路・面談</text>
+<path d="M418 250C438 250 438 250 458 250" stroke="#98AFCF" stroke-width="10" stroke-linecap="round"/>
+<path d="M742 250C762 250 762 250 782 250" stroke="#98AFCF" stroke-width="10" stroke-linecap="round"/>
+<path d="M443 250L424 236V264L443 250Z" fill="#98AFCF"/>
+<path d="M767 250L748 236V264L767 250Z" fill="#98AFCF"/>
+</svg>

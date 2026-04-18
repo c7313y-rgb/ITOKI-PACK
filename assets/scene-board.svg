@@ -1,0 +1,23 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="760" rx="40" fill="#F5F8FD"/>
+<rect x="58" y="60" width="1084" height="640" rx="30" fill="white" stroke="#D9E2EE" stroke-width="4"/>
+<rect x="106" y="108" width="988" height="88" rx="22" fill="#0F2F66"/>
+<rect x="136" y="134" width="250" height="16" rx="8" fill="#83B4FF"/>
+<rect x="136" y="160" width="150" height="12" rx="6" fill="#83B4FF" opacity=".65"/>
+<rect x="106" y="232" width="292" height="180" rx="24" fill="#EAF2FF"/>
+<rect x="422" y="232" width="332" height="180" rx="24" fill="#FFF4DF"/>
+<rect x="778" y="232" width="316" height="180" rx="24" fill="#ECFAF4"/>
+<rect x="106" y="442" width="468" height="208" rx="24" fill="#F6F9FF"/>
+<rect x="598" y="442" width="496" height="208" rx="24" fill="#F7FAFE"/>
+<circle cx="242" cy="322" r="40" fill="#A7CBFF"/>
+<circle cx="588" cy="322" r="40" fill="#FFD178"/>
+<circle cx="936" cy="322" r="40" fill="#A8E0C8"/>
+<rect x="166" y="286" width="164" height="20" rx="10" fill="#235EC7" opacity=".24"/>
+<rect x="166" y="332" width="178" height="16" rx="8" fill="#235EC7" opacity=".16"/>
+<rect x="512" y="286" width="152" height="20" rx="10" fill="#D9820F" opacity=".26"/>
+<rect x="512" y="332" width="184" height="16" rx="8" fill="#D9820F" opacity=".16"/>
+<rect x="856" y="286" width="166" height="20" rx="10" fill="#0AA36C" opacity=".26"/>
+<rect x="856" y="332" width="132" height="16" rx="8" fill="#0AA36C" opacity=".16"/>
+<text x="126" y="492" fill="#0F2F66" font-family="Arial, sans-serif" font-size="30" font-weight="700">教育委員会が説明しやすい</text>
+<text x="126" y="530" fill="#0F2F66" font-family="Arial, sans-serif" font-size="30" font-weight="700">成果・横展開の見せ方を内蔵</text>
+</svg>
